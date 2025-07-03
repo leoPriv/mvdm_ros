@@ -1,0 +1,31 @@
+# 语法:
+# topics:
+#   -
+#     topic_name: '原始话题名'
+#     ros1_type_name: 'pkg/MsgType'
+#     ros2_type_name: 'pkg/msg/MsgType'
+#     direction: 1_to_2 或 2_to_1
+
+topics:
+  # 将小车1的里程计信息从 ROS 1 传递到 ROS 2
+  - topic_name: '/limo9289/angular'
+    ros1_type_name: 'std_msgs/Float32'
+    ros2_type_name: 'std_msgs/Float32'
+    direction: 1_to_2
+
+  # 将上位机的控制指令从 ROS 2 传递到小车1
+  - topic_name: '/limo9289/cmd_vel'
+    ros1_type_name: 'std_msgs/Float32'
+    ros2_type_name: 'std_msgs/Float32'
+    direction: 2_to_1
+
+  # 小车2 的话题
+  - topic_name: '/robot2/odom'
+    ros1_type_name: 'nav_msgs/Odometry'
+    ros2_type_name: 'nav_msgs/msg/Odometry'
+    direction: 1_to_2
+
+  - topic_name: '/robot2/cmd_vel'
+    ros1_type_name: 'geometry_msgs/Twist'
+    ros2_type_name: 'geometry_msgs/msg/Twist'
+    direction: 2_to_1

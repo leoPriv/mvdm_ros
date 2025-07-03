@@ -1,0 +1,20 @@
+车辆轨迹数据文件索引
+==================================================
+
+总车辆数量: 12
+生成时间: 2025-06-30 23:08:30.760649
+
+车辆ID -> 文件路径 (数据点数量)
+--------------------------------------------------
+flow_00.4 -> vehicle_data/flow_00_4.csv (120 条数据)
+flow_001.8 -> vehicle_data/flow_001_8.csv (99 条数据)
+flow_001.9 -> vehicle_data/flow_001_9.csv (81 条数据)
+flow_0012.4 -> vehicle_data/flow_0012_4.csv (120 条数据)
+flow_10.6 -> vehicle_data/flow_10_6.csv (120 条数据)
+flow_101.13 -> vehicle_data/flow_101_13.csv (119 条数据)
+flow_101.14 -> vehicle_data/flow_101_14.csv (13 条数据)
+flow_1012.6 -> vehicle_data/flow_1012_6.csv (120 条数据)
+flow_20.6 -> vehicle_data/flow_20_6.csv (110 条数据)
+flow_201.13 -> vehicle_data/flow_201_13.csv (120 条数据)
+flow_201.14 -> vehicle_data/flow_201_14.csv (13 条数据)
+flow_2012.6 -> vehicle_data/flow_2012_6.csv (120 条数据)
