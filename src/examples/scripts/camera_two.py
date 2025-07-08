@@ -170,7 +170,7 @@ def main():
     recorder = DualCameraRecorder(
         camera1_id=0,  # 第一个摄像头ID，通常是0
         camera2_id=2,  # 第二个摄像头ID，通常是1
-        output_dir="0703"  # 输出目录
+        output_dir="0708"  # 输出目录
     )
 
     try:

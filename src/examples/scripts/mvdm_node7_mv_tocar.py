@@ -10,11 +10,11 @@ import time
 import threading
 from camera_two import main
 params = {
-    "robot_ids": ["9293","9302","9300","9298","9303","9306"],
+    "robot_ids": ["9293","9302","9306","9298","9303","9300"],
     # "robot_ids": ["9293","9303","9306"],
     "control_period": 0.1,
     "expand_num": 21,
-    "vel_k":{"9293":50,"9302":40, "9306":50,"9298":40,"9303":40,"9300":40,"9289":40}
+    "vel_k":{"9293":45,"9302":40, "9306":50,"9298":40,"9303":40,"9300":40,"9289":40}
 }
 
 class EnhancedMvdmSystem:
@@ -90,14 +90,14 @@ def run():
     rospy.init_node('enhanced_mvdm_system', anonymous=False)
 
     csv_files = [
-        "/home/mvdm-test/ros2_real/src/examples/scripts/vehicle_data/flow_0012_4.csv", #"9293"
-        "/home/mvdm-test/ros2_real/src/examples/scripts/vehicle_data/flow_101_13.csv", #"9302"
-        "/home/mvdm-test/ros2_real/src/examples/scripts/vehicle_data/flow_1012_7.csv", #"9306"
+        "/home/mvdm-test/ros2_real/src/examples/scripts/vehicle_data/flow_0012_4.csv", #"9293"0
+        "/home/mvdm-test/ros2_real/src/examples/scripts/vehicle_data/flow_101_13.csv", #"9302"1
+        "/home/mvdm-test/ros2_real/src/examples/scripts/vehicle_data/flow_1012_7.csv", #"9306"2
         "/home/mvdm-test/ros2_real/src/examples/scripts/vehicle_data/flow_101_14.csv",   #"9298"
         "/home/mvdm-test/ros2_real/src/examples/scripts/vehicle_data/flow_101_14.csv",   #"9303"
         "/home/mvdm-test/ros2_real/src/examples/scripts/vehicle_data/flow_101_14.csv",   #"9300"
         # "/home/mvdm-test/ros2_real/src/examples/scripts/vehicle_data/flow_101_14.csv",   #"9289"
-    ]
+    ]#362
     speed_action = {}
     lane_action = {}
 
